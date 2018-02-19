@@ -1,6 +1,6 @@
-# iOS-OnAirSdk
+# iOS-PlayerSDK
 
-Importing ZixiOnAirSDKStatic.Framework to your project :
+Importing ZixiPlayerSDK.Framework to your project :
 
 1. Click on project navigator
 2. Select your project (in project navigator)
@@ -18,13 +18,14 @@ Importing ZixiOnAirSDKStatic.Framework to your project :
 Using the framework:
 You can either use it dynamically (creating objects in run time) or within the interface builder.
 
-Using it dynamically
+Using it dynamically:
 1. import <ZixiPlayerSDK/ZixiPlayerSDK.h> to your .m file
 2. Add a new property to your interface. property type is zixiPlayer*
 3. allocate and initilaze the object by using initWithFrame
 4. add the new object to your view ([self.view addSubView:_videoPlayer])
 5. use the SDK functions to connect/disconnect to/from zixi stream
 
+```
 -(void) viewDidLoad
 {
 	[super viewDidLoad];
@@ -44,6 +45,7 @@ Using it dynamically
 						latency:1000];
 	}
 }
+```
 
 Using the SDK within the interface builder:
 1. Open the h file of you view (controller)
