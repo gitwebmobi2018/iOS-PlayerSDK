@@ -252,6 +252,7 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 				[_videoPlayer connect:url
 								   user:UIDevice.currentDevice.name
 							   password:nil
+						  decryptionKey:nil
 								latency:(_selectedLatency != nil ? _selectedLatency.integerValue : 1000) ];
 			}
 		}
