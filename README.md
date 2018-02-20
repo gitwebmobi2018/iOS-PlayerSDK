@@ -56,3 +56,10 @@ Using the SDK within the interface builder:
 6. Create an outlet for your newly added view in the view controller h file. make sure to set the type to 'zixiPlayer'.
 7. Use it (see onConnect: above)
 
+Creating a FAT library:
+1. Create temporary folder 
+2. Download iOS and Simulator folders into your tmp folders
+3. Download makefat.sh into your tmp folder
+4. chmod +x makefat.sh
+5. ./makefat.sh
+6. You will find 'ZixiPlayerSDK.framework' in your tmp folder. This is the FAT framework (includes i386/x86_64/armv7/arm64 architectures)
