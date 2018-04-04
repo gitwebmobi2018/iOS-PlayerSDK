@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4039A6741FD42A6F001A1931 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4039A6731FD42A6F001A1931 /* ZixiPlayerSDK.framework */; };
-		4039A6751FD42A6F001A1931 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4039A6731FD42A6F001A1931 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4049E8E0207562C0000C7869 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */; };
+		4049E8E1207563FF000C7869 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40C616C61F41A96200E63D64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C51F41A96200E63D64 /* main.m */; };
 		40C616C91F41A96200E63D64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C81F41A96200E63D64 /* AppDelegate.m */; };
 		40C616CC1F41A96200E63D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616CB1F41A96200E63D64 /* ViewController.m */; };
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4039A6751FD42A6F001A1931 /* ZixiPlayerSDK.framework in Embed Frameworks */,
+				4049E8E1207563FF000C7869 /* ZixiPlayerSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4039A6731FD42A6F001A1931 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZixiPlayerSDK.framework; sourceTree = "<group>"; };
+		4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZixiPlayerSDK.framework; sourceTree = "<group>"; };
 		40C616C11F41A96200E63D64 /* ZixiPlayerSDKTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZixiPlayerSDKTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C616C51F41A96200E63D64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40C616C71F41A96200E63D64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4039A6741FD42A6F001A1931 /* ZixiPlayerSDK.framework in Frameworks */,
+				4049E8E0207562C0000C7869 /* ZixiPlayerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,6 @@
 		40C616B81F41A96200E63D64 = {
 			isa = PBXGroup;
 			children = (
-				4039A6731FD42A6F001A1931 /* ZixiPlayerSDK.framework */,
 				40C616C31F41A96200E63D64 /* ZixiPlayerSDKTester */,
 				40C616C21F41A96200E63D64 /* Products */,
 				40E6F8B71F666EB700E5F1C9 /* Frameworks */,
@@ -120,6 +119,7 @@
 		40E6F8B71F666EB700E5F1C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

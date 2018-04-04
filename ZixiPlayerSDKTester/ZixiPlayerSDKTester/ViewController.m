@@ -12,6 +12,7 @@
 #import "ZixiAutocompleteTableViewCell.h"
 #import "ZixiSuggestion.h"
 #import "TRTextFieldExtensions.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController () <TRAutocompleteItemsSource, TRAutocompletionCellFactory, ZixiPlayerDelegate>
 
@@ -111,6 +112,14 @@ NSArray * nameFromDeviceName(NSString * deviceName)
     [_txtZixiURL setLeftPadding:55];
 	
 	_videoPlayer.delegate = self;
+	
+	NSError* error;
+	AVAudioSession* session = [AVAudioSession sharedInstance];
+	
+	AVAudioSessionCategoryOptions options = (AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionAllowBluetoothA2DP);
+	[session setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:options error:&error ];
+	[session setActive:YES error:&error];
+
 }
 
 
