@@ -1,0 +1,6 @@
+framework module ZixiPlayerSDK {
+  umbrella header "ZixiPlayerSDK.h"
+
+  export *
+  module * { export * }
+}

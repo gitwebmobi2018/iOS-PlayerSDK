@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4049E8E0207562C0000C7869 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */; };
-		4049E8E1207563FF000C7869 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38214E3B2216B64600E8E0C7 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38214E3A2216B64600E8E0C7 /* SplashViewController.m */; };
+		38214E6B221813AA00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; };
+		38214E6C221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; };
+		38214E6D221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40C616C61F41A96200E63D64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C51F41A96200E63D64 /* main.m */; };
 		40C616C91F41A96200E63D64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C81F41A96200E63D64 /* AppDelegate.m */; };
 		40C616CC1F41A96200E63D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616CB1F41A96200E63D64 /* ViewController.m */; };
@@ -23,13 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4039A6691FD4090B001A1931 /* Embed Frameworks */ = {
+		38214E382216B47C00E8E0C7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4049E8E1207563FF000C7869 /* ZixiPlayerSDK.framework in Embed Frameworks */,
+				38214E6D221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38214E392216B64600E8E0C7 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		38214E3A2216B64600E8E0C7 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZixiPlayerSDK.framework; path = "../../../../../Downloads/iOS-PlayerSDK-master/ZixiPlayerSDK.framework"; sourceTree = "<group>"; };
 		4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZixiPlayerSDK.framework; sourceTree = "<group>"; };
 		40C616C11F41A96200E63D64 /* ZixiPlayerSDKTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZixiPlayerSDKTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C616C51F41A96200E63D64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4049E8E0207562C0000C7869 /* ZixiPlayerSDK.framework in Frameworks */,
+				38214E6C221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
+				38214E6B221813AA00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,8 @@
 				40C616C81F41A96200E63D64 /* AppDelegate.m */,
 				40C616CA1F41A96200E63D64 /* ViewController.h */,
 				40C616CB1F41A96200E63D64 /* ViewController.m */,
+				38214E392216B64600E8E0C7 /* SplashViewController.h */,
+				38214E3A2216B64600E8E0C7 /* SplashViewController.m */,
 				40C616CD1F41A96200E63D64 /* Main.storyboard */,
 				40C616D01F41A96200E63D64 /* Assets.xcassets */,
 				40C616D21F41A96200E63D64 /* LaunchScreen.storyboard */,
@@ -111,6 +119,7 @@
 		40C616C41F41A96200E63D64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */,
 				40C616C51F41A96200E63D64 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,7 +162,7 @@
 				40C616BD1F41A96200E63D64 /* Sources */,
 				40C616BE1F41A96200E63D64 /* Frameworks */,
 				40C616BF1F41A96200E63D64 /* Resources */,
-				4039A6691FD4090B001A1931 /* Embed Frameworks */,
+				38214E382216B47C00E8E0C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,7 +184,7 @@
 				TargetAttributes = {
 					40C616C01F41A96200E63D64 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = PRMN6MK52R;
+						DevelopmentTeam = 7R6LZV43XN;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -221,6 +230,7 @@
 				40FA77A81F4F20C60092FC85 /* TRTextFieldExtensions.m in Sources */,
 				40C616C91F41A96200E63D64 /* AppDelegate.m in Sources */,
 				40FA77A71F4F20C60092FC85 /* TRStringExtensions.m in Sources */,
+				38214E3B2216B64600E8E0C7 /* SplashViewController.m in Sources */,
 				40FA77A61F4F20C60092FC85 /* TRAutocompleteView.m in Sources */,
 				40C616C61F41A96200E63D64 /* main.m in Sources */,
 				40FA77AA1F4F20C60092FC85 /* ZixiSuggestion.m in Sources */,
@@ -347,18 +357,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PRMN6MK52R;
+				DEVELOPMENT_TEAM = 7R6LZV43XN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZixiPlayerSDKTester",
 				);
 				INFOPLIST_FILE = ZixiPlayerSDKTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zixi.ZixiPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = "airmont-tv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8b2f690f-4628-48fa-a220-71b318d79e7b";
-				PROVISIONING_PROFILE_SPECIFIER = "ZixiPlayer-Enterprise-DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "Airmont-tv-dev";
 			};
 			name = Debug;
 		};
@@ -368,18 +379,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PRMN6MK52R;
+				DEVELOPMENT_TEAM = 7R6LZV43XN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZixiPlayerSDKTester",
 				);
 				INFOPLIST_FILE = ZixiPlayerSDKTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zixi.ZixiPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = "airmont-tv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8b2f690f-4628-48fa-a220-71b318d79e7b";
-				PROVISIONING_PROFILE_SPECIFIER = "ZixiPlayer-Enterprise-DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "Airmont-tv-dev";
 			};
 			name = Release;
 		};
