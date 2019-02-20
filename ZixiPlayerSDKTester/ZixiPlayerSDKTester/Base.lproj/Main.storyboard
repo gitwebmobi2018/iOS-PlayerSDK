@@ -137,17 +137,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dropped:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pep-FJ-bSk">
-                                <rect key="frame" x="140" y="357" width="60.5" height="17"/>
+                                <rect key="frame" x="466" y="357" width="60.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-AJ-lZX">
-                                <rect key="frame" x="202.5" y="357" width="37.5" height="17"/>
+                                <rect key="frame" x="528.5" y="357" width="37.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WE-hO-xSz">
+                                <rect key="frame" x="271.5" y="354" width="124" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="syD-SZ-y61"/>
+                                </constraints>
+                                <state key="normal" title="www.airmont.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBe-5N-bMW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -155,7 +167,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pep-FJ-bSk" secondAttribute="bottom" constant="1" id="3bv-cn-2Yc"/>
                             <constraint firstItem="YgX-ac-hqa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1" id="7O9-Tr-TSe"/>
                             <constraint firstAttribute="trailing" secondItem="hcY-fQ-A3y" secondAttribute="trailing" constant="16" id="7gw-gT-Uhd"/>
-                            <constraint firstItem="pep-FJ-bSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="140" id="7il-Rc-s5D"/>
                             <constraint firstItem="mC7-UR-DC9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="9gt-Af-Y0H"/>
                             <constraint firstItem="0ew-36-DV3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GCT-go-v5f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0ew-36-DV3" secondAttribute="bottom" constant="20" id="H6h-hL-n66"/>
@@ -168,15 +179,18 @@
                             <constraint firstAttribute="trailing" secondItem="XwU-6b-j4G" secondAttribute="trailing" constant="8" id="WaB-XW-L1A"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kvd-Qt-ivc" secondAttribute="bottom" constant="1" id="ZuN-aZ-2rr"/>
                             <constraint firstItem="mC7-UR-DC9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aux-c0-hX9"/>
+                            <constraint firstItem="0WE-hO-xSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWm-md-Wr4"/>
                             <constraint firstAttribute="trailing" secondItem="5eF-f3-fu0" secondAttribute="trailing" constant="81" id="dGy-Ts-UnB"/>
                             <constraint firstItem="XwU-6b-j4G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="eAF-Wz-gms"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iCM-AJ-lZX" secondAttribute="bottom" constant="1" id="emG-QS-9zv"/>
                             <constraint firstItem="5eF-f3-fu0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="fM6-YP-9HA"/>
                             <constraint firstItem="juc-d6-6K1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="69" id="gud-ih-iUk"/>
+                            <constraint firstItem="hcY-fQ-A3y" firstAttribute="leading" secondItem="iCM-AJ-lZX" secondAttribute="trailing" constant="4" id="hf3-4Z-E3C"/>
                             <constraint firstItem="9hz-L1-toT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="jIw-mM-Izc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YgX-ac-hqa" secondAttribute="bottom" constant="1" id="q9h-Ob-PSl"/>
                             <constraint firstItem="kvd-Qt-ivc" firstAttribute="leading" secondItem="YgX-ac-hqa" secondAttribute="trailing" constant="2" id="rWR-k5-iNr"/>
                             <constraint firstItem="iCM-AJ-lZX" firstAttribute="leading" secondItem="pep-FJ-bSk" secondAttribute="trailing" constant="2" id="rn5-KQ-4Qq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0WE-hO-xSz" secondAttribute="bottom" constant="1" id="txt-DQ-5Dr"/>
                             <constraint firstItem="0ew-36-DV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="upi-9K-6eY"/>
                             <constraint firstAttribute="trailing" secondItem="9hz-L1-toT" secondAttribute="trailing" id="zEm-y3-sVG"/>
                         </constraints>

@@ -641,4 +641,13 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 	return cell;
 	
 }
+
+- (IBAction)linkDidTap:(id)sender
+{
+    NSURL *url = [NSURL URLWithString: @"http://www.airmont.com"];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+    }
+}
+
 @end

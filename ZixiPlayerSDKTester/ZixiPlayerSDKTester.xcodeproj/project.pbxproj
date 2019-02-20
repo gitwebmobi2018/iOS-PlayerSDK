@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		38214E3B2216B64600E8E0C7 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38214E3A2216B64600E8E0C7 /* SplashViewController.m */; };
-		38214E6B221813AA00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; };
-		38214E6C221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; };
-		38214E6D221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38214E79221AE1D900E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E78221AE1D900E8E0C7 /* ZixiPlayerSDK.framework */; };
+		38214E7A221AE1E000E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E78221AE1D900E8E0C7 /* ZixiPlayerSDK.framework */; };
+		38214E7B221AE1E000E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38214E78221AE1D900E8E0C7 /* ZixiPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40C616C61F41A96200E63D64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C51F41A96200E63D64 /* main.m */; };
 		40C616C91F41A96200E63D64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616C81F41A96200E63D64 /* AppDelegate.m */; };
 		40C616CC1F41A96200E63D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C616CB1F41A96200E63D64 /* ViewController.m */; };
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				38214E6D221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */,
+				38214E7B221AE1E000E8E0C7 /* ZixiPlayerSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		38214E392216B64600E8E0C7 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		38214E3A2216B64600E8E0C7 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZixiPlayerSDK.framework; path = "../../../../../Downloads/iOS-PlayerSDK-master/ZixiPlayerSDK.framework"; sourceTree = "<group>"; };
+		38214E78221AE1D900E8E0C7 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZixiPlayerSDK.framework; sourceTree = "<group>"; };
 		4049E8DF207562C0000C7869 /* ZixiPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZixiPlayerSDK.framework; sourceTree = "<group>"; };
 		40C616C11F41A96200E63D64 /* ZixiPlayerSDKTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZixiPlayerSDKTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C616C51F41A96200E63D64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38214E6C221813AF00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
-				38214E6B221813AA00E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
+				38214E7A221AE1E000E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
+				38214E79221AE1D900E8E0C7 /* ZixiPlayerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 		40C616C41F41A96200E63D64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38214E6A221813AA00E8E0C7 /* ZixiPlayerSDK.framework */,
+				38214E78221AE1D900E8E0C7 /* ZixiPlayerSDK.framework */,
 				40C616C51F41A96200E63D64 /* main.m */,
 			);
 			name = "Supporting Files";
