@@ -68,10 +68,6 @@
                                 <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-36-DV3" customClass="zixiPlayer">
-                                <rect key="frame" x="0.0" y="64" width="667" height="291"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-L1-toT">
                                 <rect key="frame" x="587" y="35" width="80" height="30"/>
                                 <constraints>
@@ -108,7 +104,7 @@
                                     <action selector="onSelectBitrate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ef-SQ-oCy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type URL in host:port/stream format" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XwU-6b-j4G">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type URL in host:port/stream format" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XwU-6b-j4G">
                                 <rect key="frame" x="9" y="5" width="650" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -160,6 +156,21 @@
                                     <action selector="linkDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBe-5N-bMW"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-36-DV3" customClass="zixiPlayer">
+                                <rect key="frame" x="0.0" y="64" width="667" height="291"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-Oc-kgn">
+                                <rect key="frame" x="617" y="305" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Jk1-tV-DzP"/>
+                                    <constraint firstAttribute="height" constant="50" id="sMu-yA-J4o"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <connections>
+                                    <action selector="expandButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8I-QO-t1t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -175,6 +186,7 @@
                             <constraint firstAttribute="trailing" secondItem="mC7-UR-DC9" secondAttribute="trailing" id="NZq-pD-sFC"/>
                             <constraint firstItem="XwU-6b-j4G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="Rf2-DR-j5h"/>
                             <constraint firstItem="0ew-36-DV3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RyP-ZG-vuz"/>
+                            <constraint firstItem="3SM-Oc-kgn" firstAttribute="bottom" secondItem="0ew-36-DV3" secondAttribute="bottom" id="SbN-4f-GNl"/>
                             <constraint firstItem="juc-d6-6K1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="VNb-2m-pbZ"/>
                             <constraint firstAttribute="trailing" secondItem="XwU-6b-j4G" secondAttribute="trailing" constant="8" id="WaB-XW-L1A"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kvd-Qt-ivc" secondAttribute="bottom" constant="1" id="ZuN-aZ-2rr"/>
@@ -188,6 +200,7 @@
                             <constraint firstItem="hcY-fQ-A3y" firstAttribute="leading" secondItem="iCM-AJ-lZX" secondAttribute="trailing" constant="4" id="hf3-4Z-E3C"/>
                             <constraint firstItem="9hz-L1-toT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="jIw-mM-Izc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YgX-ac-hqa" secondAttribute="bottom" constant="1" id="q9h-Ob-PSl"/>
+                            <constraint firstItem="3SM-Oc-kgn" firstAttribute="trailing" secondItem="0ew-36-DV3" secondAttribute="trailing" id="qSs-WH-7b8"/>
                             <constraint firstItem="kvd-Qt-ivc" firstAttribute="leading" secondItem="YgX-ac-hqa" secondAttribute="trailing" constant="2" id="rWR-k5-iNr"/>
                             <constraint firstItem="iCM-AJ-lZX" firstAttribute="leading" secondItem="pep-FJ-bSk" secondAttribute="trailing" constant="2" id="rn5-KQ-4Qq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0WE-hO-xSz" secondAttribute="bottom" constant="1" id="txt-DQ-5Dr"/>
@@ -201,11 +214,14 @@
                         <outlet property="connectButton" destination="9hz-L1-toT" id="MTz-Uq-3Ck"/>
                         <outlet property="currentBitrate" destination="kvd-Qt-ivc" id="N0i-25-Ej9"/>
                         <outlet property="currentBitrateButton" destination="5eF-f3-fu0" id="yOg-iU-JEr"/>
+                        <outlet property="expandButton" destination="3SM-Oc-kgn" id="MNa-kS-I4W"/>
                         <outlet property="latencyButton" destination="juc-d6-6K1" id="b2m-oH-Jvg"/>
                         <outlet property="txtZixiURL" destination="XwU-6b-j4G" id="be4-PQ-LBk"/>
                         <outlet property="unrecoveredPackets" destination="iCM-AJ-lZX" id="1Ai-Iq-JC5"/>
                         <outlet property="versionLabel" destination="hcY-fQ-A3y" id="MEo-uU-0zc"/>
+                        <outlet property="videoBottomConstraint" destination="H6h-hL-n66" id="cHf-ck-RrR"/>
                         <outlet property="videoPlayer" destination="0ew-36-DV3" id="E61-a5-hPP"/>
+                        <outlet property="videoTopConstraint" destination="upi-9K-6eY" id="uSx-7v-dIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

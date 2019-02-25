@@ -29,6 +29,8 @@
 @property (strong, nonatomic) NSString* suggesntionsFilePath;
 @property (strong, nonatomic) NSNumber* selectedBitrate;
 @property (strong, nonatomic) NSTimer* sessionInfoTimer;
+@property (assign, nonatomic) BOOL videoExpanded;
+@property (copy, nonatomic) NSString *url;
 
 @end
 
@@ -65,7 +67,25 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 
 -(void) dismissKeyboard:(UITapGestureRecognizer*) r
 {
+    CGPoint location = [r locationInView:self.view];
+    if (CGRectContainsPoint(self.expandButton.frame, location)) {
+        return;
+    }
+    if (_url != nil) {
+        _txtZixiURL.text = [[_url componentsSeparatedByString:@"/"] firstObject];
+    }
 	[self.view endEditing:YES];
+    _expandButton.alpha = 1.0;
+    if (_videoExpanded) {
+        _expandButton.hidden = NO;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            if (_videoExpanded) {
+                [UIView animateWithDuration:0.3 animations:^{
+                    self.expandButton.alpha = 0.0;
+                }];
+            }
+        });
+    }
 }
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -109,7 +129,7 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 	if (!_suggestionArray)
 		_suggestionArray = [[NSMutableArray alloc] init];
     
-    [_txtZixiURL setLeftPadding:55];
+//    [_txtZixiURL setLeftPadding:55];
 	
 	_videoPlayer.delegate = self;
 	
@@ -233,6 +253,9 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 			}
 			
 			NSLog(@"%@", url);
+            _url = url;
+            _txtZixiURL.text = [[_txtZixiURL.text componentsSeparatedByString:@"/"] firstObject];
+            
 			NSPredicate* p = [NSPredicate predicateWithFormat:@"SELF == %@", url];
 			NSArray* exist = [_suggestionArray filteredArrayUsingPredicate:p];
 			if (exist && exist.count > 0)
@@ -562,6 +585,10 @@ NSArray * nameFromDeviceName(NSString * deviceName)
 	}  completion:nil];
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    _txtZixiURL.text = _url;
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
 	[textField resignFirstResponder];
@@ -647,6 +674,29 @@ NSArray * nameFromDeviceName(NSString * deviceName)
     NSURL *url = [NSURL URLWithString: @"http://www.airmont.com"];
     if ([[UIApplication sharedApplication] canOpenURL:url]) {
         [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+    }
+}
+
+- (IBAction)expandButtonDidTap:(id)sender {
+    _videoExpanded = !_videoExpanded;
+    _videoTopConstraint.constant = _videoExpanded ? 0.0 : 64.0;
+    _videoBottomConstraint.constant = _videoExpanded ? 0.0 : 20.0;
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    if (_videoExpanded) {
+        _expandButton.alpha = 1.0;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            if (_videoExpanded) {
+                [UIView animateWithDuration:0.3 animations:^{
+                    self.expandButton.alpha = 0.0;
+                }];
+            } else {
+                self.expandButton.alpha = 1.0;
+            }
+        });
+    } else {
+        _expandButton.alpha = 1.0;
     }
 }
 

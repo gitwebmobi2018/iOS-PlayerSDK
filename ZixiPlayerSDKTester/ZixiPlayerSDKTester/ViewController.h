@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentBitrate;
 @property (weak, nonatomic) IBOutlet UILabel *unrecoveredPackets;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoBottomConstraint;
+@property (weak, nonatomic) IBOutlet UIButton *expandButton;
 
 - (IBAction)onConnect:(id)sender;
 - (IBAction)onSelectBitrate:(id)sender;
